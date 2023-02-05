@@ -1,0 +1,673 @@
+fileFormatVersion: 2
+guid: aa1a6ebb320b68b46bdfab6c111fad76
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 661
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071a766f78ef2ad498443f15490a1348
+      internalID: 187897166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 661
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f8883a92581ce47844ba040cea85f9
+      internalID: -242265491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 661
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1619bf44a410ee24fb53b096d7a53f18
+      internalID: -2139153271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_3
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 661
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7d28cfaf93f4b45bbd76e344174c6a
+      internalID: 1837291203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_4
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 661
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3274b1a6d3ca6489eb07d162e3babb
+      internalID: -1540054233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 496
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb551091d4943264f81622612215e1a3
+      internalID: 1931338562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_6
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 496
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afff75aff2fe94546a1ac304714d4389
+      internalID: -1101935932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_7
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 496
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3e5225ca1dfe0439e6168d7329531d
+      internalID: -625526720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_8
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 496
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f4d98bfcef1a74e8275e847224bf06
+      internalID: -1697070457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_9
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 496
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0110d489207b97a4992c4c933b1194d1
+      internalID: -986265180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 331
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092ace139dca95f429cc6a928d450db0
+      internalID: -612184093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_11
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 331
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5e47f2fbc919c448c7cf11d788fc65
+      internalID: -1904090949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_12
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 331
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6051e637e05173242a36bc7359432026
+      internalID: -2012320785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_13
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 331
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae6efe30564cfb49bb943878b8f4ae4
+      internalID: -609996328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_14
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 331
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e542bb5394901d84099e290a29d55d72
+      internalID: -489673435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 166
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bae07752a4be049ae61df3270ef0ac
+      internalID: 1151634066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_16
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 166
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4702334e58dd05c4c9eae97751fa26ba
+      internalID: 271499432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_17
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 166
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580f574cda09a5842aa94f6e698e347b
+      internalID: 14630480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_18
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 166
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2864b387cd77faa4f81859b7607416a6
+      internalID: 2107108747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_19
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 166
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f58f9867c5d06a47bee9dc6e61966d0
+      internalID: -277356241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b2e5b1f9a8df148a6cf47a7516efb6
+      internalID: 482102911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_21
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01144fa761dd814d8f2ffb70c86c61e
+      internalID: 1034345360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_22
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d928a1cd2be6bdf43a100c2d13397c82
+      internalID: 111703117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_23
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c945d65787c70f44ae894b3fb24470e
+      internalID: -791536053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_24
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79587a9df2126fe4c86ec5739566a745
+      internalID: 1320998145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_24: 1320998145
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_3: 1837291203
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_17: 14630480
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_11: -1904090949
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_15: 1151634066
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_7: -625526720
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_2: -2139153271
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_1: -242265491
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_9: -986265180
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_14: -489673435
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_20: 482102911
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_22: 111703117
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_23: -791536053
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_4: -1540054233
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_19: -277356241
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_5: 1931338562
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_12: -2012320785
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_8: -1697070457
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_18: 2107108747
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_16: 271499432
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_10: -612184093
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_21: 1034345360
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_0: 187897166
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_6: -1101935932
+      retro-8bit-pixel-art-game-surface-block-patterns_8071-13665_13: -609996328
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
