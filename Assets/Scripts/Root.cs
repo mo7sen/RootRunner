@@ -16,6 +16,7 @@ public class Root : MonoBehaviour
     public float rootSpeed;
     //public float growSpeed;
     public float detectionRadius;
+    public Transform collider;
 
     public bool pointingUp;
 
@@ -57,30 +58,18 @@ public class Root : MonoBehaviour
             
             Vector2 deltaDirection = newEnd - oldEnd;
 
+            //RaycastHit2D hitInfo = Physics2D.Raycast(oldEnd + deltaDirection.normalized * 0.01f, deltaDirection.normalized, deltaDirection.magnitude);
             RaycastHit2D hitInfo = Physics2D.Raycast(oldEnd + deltaDirection.normalized * 0.01f, deltaDirection.normalized, deltaDirection.magnitude, LayerMask.GetMask(new[] { "RootHelper" }));
             if(hitInfo.collider != null)
             {
-                //this.end = oldEnd + (Vector2)Vector3.Cross(Vector3.forward, deltaDirection.normalized) * deltaDirection.magnitude;
                 this.end += hitInfo.normal * (deltaDirection.magnitude - hitInfo.distance);
-                //this.end += hitInfo.normal * (deltaDirection.magnitude - hitInfo.distance) * Time.deltaTime;
             }
 
+            //RaycastHit2D hitInfo_end = Physics2D.Raycast(this.end, this.start - this.end, (this.start - this.end).magnitude);
             RaycastHit2D hitInfo_end = Physics2D.Raycast(this.end, this.start - this.end, (this.start - this.end).magnitude, LayerMask.GetMask(new[] { "RootHelper" }));
-            RaycastHit2D hitInfo_start = Physics2D.Raycast(this.start, this.end - this.start, this.length, LayerMask.GetMask(new[] { "RootHelper" }));
-            if(hitInfo_end.collider || hitInfo_start.collider)
+            if(hitInfo_end.collider)
             {
-                //Vector2 startCorrection = Vector2.zero;
-                //Vector2 endCorrection = Vector2.zero;
-
-                //startCorrection.x += hitInfo_start.normal.x;//  > 0.0f ? 1.0f - hitInfo_start.normal.x : -1.0f - hitInfo_start.normal.x;
-                //startCorrection.y += hitInfo_start.normal.y;//  > 0.0f ? 1.0f - hitInfo_start.normal.y : -1.0f - hitInfo_start.normal.y;
-                //endCorrection.x += hitInfo_end.normal.x;//  > 0.0f ? 1.0f - hitInfo_end.normal.x : -1.0f - hitInfo_end.normal.x;
-                //endCorrection.y += hitInfo_end.normal.y;//  > 0.0f ? 1.0f - hitInfo_end.normal.y : -1.0f - hitInfo_end.normal.y;
-
                 this.start += hitInfo_end.normal * (this.start - this.end).magnitude;
-                //this.start += hitInfo_end.normal * (this.start - this.end).magnitude * Time.deltaTime;
-                //this.start += startCorrection * hitInfo_start.distance;
-                //this.end += endCorrection * hitInfo_end.distance;
             }
 
         }
@@ -96,7 +85,7 @@ public class Root : MonoBehaviour
 
             float newAngle = Mathf.Rad2Deg * GetAngleRad(this.start, target);
 
-            angle = Mathf.LerpAngle(angle, newAngle, rootSpeed * Time.deltaTime * 2.0f);
+            angle = Mathf.LerpAngle(angle, newAngle, 5.0f * Time.deltaTime);
             dir = dir.normalized * this.length * -1.0f;
 
             Vector2 oldStart = this.start;
@@ -106,10 +95,10 @@ public class Root : MonoBehaviour
 
             Vector2 deltaDirection = newStart - oldStart;
 
+            //RaycastHit2D hitInfo = Physics2D.Raycast(oldStart + deltaDirection.normalized * 0.01f, deltaDirection.normalized, deltaDirection.magnitude);
             RaycastHit2D hitInfo = Physics2D.Raycast(oldStart + deltaDirection.normalized * 0.01f, deltaDirection.normalized, deltaDirection.magnitude, LayerMask.GetMask(new[] { "RootHelper" }));
             if (hitInfo.collider != null)
             {
-                //this.end = oldEnd + (Vector2)Vector3.Cross(Vector3.forward, deltaDirection.normalized) * deltaDirection.magnitude;
                 this.start += hitInfo.normal * (deltaDirection.magnitude - hitInfo.distance);
             }
         }
@@ -147,7 +136,7 @@ public class Root : MonoBehaviour
                 if((target.position - head.transform.position).magnitude < detectionRadius)
                     this.headState = HeadState.Chasing;
                 float outDirY = pointingUp ? 1.0f : -1.0f;
-                headPath.destination = Vector2.Lerp(head.transform.position, new Vector2(rootBase.transform.position.x + Mathf.Sin(Time.time) * 0.2f, rootBase.transform.position.y + rootLength * outDirY * 0.8f + (Mathf.Abs(Mathf.Cos(Time.time)) + outDirY) * 0.3f), 0.5f);
+                headPath.destination = Vector2.Lerp(head.transform.position, new Vector2(rootBase.transform.position.x + Mathf.Sin(Time.time), head.transform.position.y), 0.5f * Time.deltaTime);
                 break;
             case HeadState.Chasing:
                 if ((target.position - head.transform.position).magnitude > detectionRadius)
@@ -179,7 +168,8 @@ public class Root : MonoBehaviour
                 seg.Update();
         }
 
-        head.transform.position = Vector3.Lerp(head.transform.position, (Vector3)currentLastSeg.end, 0.3f);
+        head.transform.position = Vector3.Lerp(head.transform.position, (Vector3)currentLastSeg.end, 0.8f);
+        collider.transform.position = (Vector3)currentLastSeg.end;
         Draw();
     }
     
