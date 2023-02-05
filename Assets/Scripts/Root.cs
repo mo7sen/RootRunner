@@ -57,15 +57,16 @@ public class Root : MonoBehaviour
             
             Vector2 deltaDirection = newEnd - oldEnd;
 
-            RaycastHit2D hitInfo = Physics2D.Raycast(oldEnd + deltaDirection.normalized * 0.01f, deltaDirection.normalized, deltaDirection.magnitude);
+            RaycastHit2D hitInfo = Physics2D.Raycast(oldEnd + deltaDirection.normalized * 0.01f, deltaDirection.normalized, deltaDirection.magnitude, LayerMask.GetMask(new[] { "RootHelper" }));
             if(hitInfo.collider != null)
             {
                 //this.end = oldEnd + (Vector2)Vector3.Cross(Vector3.forward, deltaDirection.normalized) * deltaDirection.magnitude;
-                this.end += hitInfo.normal * (deltaDirection.magnitude - hitInfo.distance) * Time.deltaTime;
+                this.end += hitInfo.normal * (deltaDirection.magnitude - hitInfo.distance);
+                //this.end += hitInfo.normal * (deltaDirection.magnitude - hitInfo.distance) * Time.deltaTime;
             }
 
-            RaycastHit2D hitInfo_end = Physics2D.Raycast(this.end, this.start - this.end, (this.start - this.end).magnitude);
-            RaycastHit2D hitInfo_start = Physics2D.Raycast(this.start, this.end - this.start, this.length);
+            RaycastHit2D hitInfo_end = Physics2D.Raycast(this.end, this.start - this.end, (this.start - this.end).magnitude, LayerMask.GetMask(new[] { "RootHelper" }));
+            RaycastHit2D hitInfo_start = Physics2D.Raycast(this.start, this.end - this.start, this.length, LayerMask.GetMask(new[] { "RootHelper" }));
             if(hitInfo_end.collider || hitInfo_start.collider)
             {
                 //Vector2 startCorrection = Vector2.zero;
@@ -76,7 +77,8 @@ public class Root : MonoBehaviour
                 //endCorrection.x += hitInfo_end.normal.x;//  > 0.0f ? 1.0f - hitInfo_end.normal.x : -1.0f - hitInfo_end.normal.x;
                 //endCorrection.y += hitInfo_end.normal.y;//  > 0.0f ? 1.0f - hitInfo_end.normal.y : -1.0f - hitInfo_end.normal.y;
 
-                this.start += hitInfo_end.normal * (this.start - this.end).magnitude * Time.deltaTime;
+                this.start += hitInfo_end.normal * (this.start - this.end).magnitude;
+                //this.start += hitInfo_end.normal * (this.start - this.end).magnitude * Time.deltaTime;
                 //this.start += startCorrection * hitInfo_start.distance;
                 //this.end += endCorrection * hitInfo_end.distance;
             }
@@ -94,7 +96,7 @@ public class Root : MonoBehaviour
 
             float newAngle = Mathf.Rad2Deg * GetAngleRad(this.start, target);
 
-            angle = Mathf.LerpAngle(angle, newAngle, rootSpeed * Time.deltaTime);
+            angle = Mathf.LerpAngle(angle, newAngle, rootSpeed * Time.deltaTime * 2.0f);
             dir = dir.normalized * this.length * -1.0f;
 
             Vector2 oldStart = this.start;
@@ -104,7 +106,7 @@ public class Root : MonoBehaviour
 
             Vector2 deltaDirection = newStart - oldStart;
 
-            RaycastHit2D hitInfo = Physics2D.Raycast(oldStart + deltaDirection.normalized * 0.01f, deltaDirection.normalized, deltaDirection.magnitude);
+            RaycastHit2D hitInfo = Physics2D.Raycast(oldStart + deltaDirection.normalized * 0.01f, deltaDirection.normalized, deltaDirection.magnitude, LayerMask.GetMask(new[] { "RootHelper" }));
             if (hitInfo.collider != null)
             {
                 //this.end = oldEnd + (Vector2)Vector3.Cross(Vector3.forward, deltaDirection.normalized) * deltaDirection.magnitude;
@@ -177,7 +179,7 @@ public class Root : MonoBehaviour
                 seg.Update();
         }
 
-        head.transform.position = (Vector3)currentLastSeg.end;
+        head.transform.position = Vector3.Lerp(head.transform.position, (Vector3)currentLastSeg.end, 0.3f);
         Draw();
     }
     
