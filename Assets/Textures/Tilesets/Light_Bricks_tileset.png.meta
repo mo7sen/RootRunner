@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -91,6 +91,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1102,7 +1114,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Light_Bricks_tileset_23: -888630970
+      Light_Bricks_tileset_41: 1167297090
       Light_Bricks_tileset_42: 1008406536
       Light_Bricks_tileset_3: 203685314
       Light_Bricks_tileset_44: 1690493522
@@ -1144,10 +1156,10 @@ TextureImporter:
       Light_Bricks_tileset_21: -1183732727
       Light_Bricks_tileset_1: 1128135859
       Light_Bricks_tileset_22: -805524462
-      Light_Bricks_tileset_30: 1078690374
       Light_Bricks_tileset_36: -1416366547
-      Light_Bricks_tileset_41: 1167297090
       Light_Bricks_tileset_9: 1201734296
+      Light_Bricks_tileset_23: -888630970
+      Light_Bricks_tileset_30: 1078690374
       Light_Bricks_tileset_35: -623296557
   spritePackingTag: 
   pSDRemoveMatte: 0
