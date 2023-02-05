@@ -417,9 +417,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1869202249764885173, guid: 37944d5340f49e4439e38f6dea5e4e66, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869202249764885173, guid: 37944d5340f49e4439e38f6dea5e4e66, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869202249764885173, guid: 37944d5340f49e4439e38f6dea5e4e66, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -356416015
+      objectReference: {fileID: 0}
     - target: {fileID: 1869202249764885178, guid: 37944d5340f49e4439e38f6dea5e4e66, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1869202249764885178, guid: 37944d5340f49e4439e38f6dea5e4e66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -460,6 +472,10 @@ PrefabInstance:
     - target: {fileID: 1869202249764885178, guid: 37944d5340f49e4439e38f6dea5e4e66, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869202249764885182, guid: 37944d5340f49e4439e38f6dea5e4e66, type: 3}
+      propertyPath: m_JumpForce
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 1869202249764885182, guid: 37944d5340f49e4439e38f6dea5e4e66, type: 3}
       propertyPath: m_WhatIsGround.m_Bits
@@ -925,8 +941,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1785267971
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -11337,8 +11353,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1785267971
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -12952,7 +12968,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6425744054575338585, guid: 537953c0d8a55cc4688abc58c5008517, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6425744054575338585, guid: 537953c0d8a55cc4688abc58c5008517, type: 3}
       propertyPath: m_LocalPosition.x
